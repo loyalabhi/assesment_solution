@@ -1,0 +1,14 @@
+string1 = input("Enter a string: ")
+
+unique_letters = set()
+print("Input Sting is : ",format(string1)
+)
+print("UniqueLtters : ", end=" ")
+
+for char in string1:
+    
+    if char.isalpha():
+        
+        if char.lower() not in unique_letters:
+            unique_letters.add(char.lower())
+            print(char.lower(), end=", ")
